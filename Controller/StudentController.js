@@ -29,7 +29,7 @@ const Display = async (req, res) => {
     try {
         const Student = await StudentSchema.findById(req.params.id)
         if(!Student){
-        res.send("Not Found")
+        res.send("Not Found try to add other id")
     }
    
      res.json([{name:Student.name, maths:Student.maths, Science: Student.science,hindi:Student.Hindi,Kannnada:Student.Kannada, total:Student.total}])

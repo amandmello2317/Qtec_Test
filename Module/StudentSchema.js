@@ -16,22 +16,21 @@ const StudentSchema = new Schema({
         type:Number
     },
     
-    // maths:{
-    //     type:Number
-    // },
-    // science:{
-    //     type:Number
-    // },
-    // Kannada:{
-    //     type:Number
-    // },
-    // Hindi:{
-    //     type:Number
-    // },
-    // total:{
-    //     type:Number
-    // },
-    marks:[],
+    maths:{
+        type:Number
+    },
+    science:{
+        type:Number
+    },
+    Kannada:{
+        type:Number
+    },
+    Hindi:{
+        type:Number
+    },
+    total:{
+        type:Number
+    },
     date:{
         type:Date,
         default:Date.now()

@@ -15,31 +15,31 @@ const StudentInsert = async (req, res) => {
             // date:date
         })
         
-        const savestd = await Student.save();
-        res.send(savestd)
-    } catch (error) {
-        console.log(error);
-        res.status(500).send("Internal error")
-    }
-};
+//         const savestd = await Student.save();
+//         res.send(savestd)
+//     } catch (error) {
+//         console.log(error);
+//         res.status(500).send("Internal error")
+//     }
+// };
 
-//display
+// //display
 
-const Display = async (req, res) => {
-    try {
-        const Student = await StudentSchema.findById(req.params.id)
-        if(!Student){
-        res.send("Not Found try to add other id")
-    }
+// const Display = async (req, res) => {
+//     try {
+//         const Student = await StudentSchema.findById(req.params.id)
+//         if(!Student){
+//         res.send("Not Found try to add other id")
+//     }
    
-     res.json([{name:Student.name, maths:Student.maths, Science: Student.science,hindi:Student.Hindi,Kannnada:Student.Kannada, total:Student.total}])
-    } catch (error) {
+//      res.json([{name:Student.name, maths:Student.maths, Science: Student.science,hindi:Student.Hindi,Kannnada:Student.Kannada, total:Student.total}])
+//     } catch (error) {
 
-         console.log(error);
-        res.status(500).send("Internal Error")
+//          console.log(error);
+//         res.status(500).send("Internal Error")
         
-    }
-}
+//     }
+// }
 
 //delete
 

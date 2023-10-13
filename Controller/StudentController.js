@@ -35,7 +35,7 @@ const Display = async (req, res) => {
      res.json([{name:Student.name, maths:Student.maths, Science: Student.science,hindi:Student.Hindi,Kannnada:Student.Kannada, total:Student.total}])
     } catch (error) {
 
-        console.error(error. message);
+         console.log(error);
         res.status(500).send("Internal Error")
         
     }
